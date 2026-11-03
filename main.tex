@@ -1,0 +1,179 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor}
+
+\geometry{margin=1in}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+
+\title{\textbf{Research Progress Report (Plz Change the content to your own :))}}
+\author{
+  YOUR NAME \\[0.4em]
+  \small Student ID: YOUR ID \\
+  \small Advisor: Dr. Gabriel Elijah Lipkowitz
+}
+\date{April 2026}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+% ---------------------------------------------------------------------------
+\section{Research Projects and Publications}
+% ---------------------------------------------------------------------------
+
+Projects~\ref{subsec:covision} and~\ref{subsec:spatialward} are coined from the collaboration between us and the National University Hospital.
+Project~\ref{subsec:eurexa} is from my wrapping-up work during my undergraduate studies.
+
+% ---
+\subsection{CoVision: A Cross-Platform Framework for Addressing Visuospatial Constructive Cognitive Load in Collaborative Spatial Design (Figure~\ref{fig:covision})}
+\label{subsec:covision}
+
+\noindent\textbf{Status:} First-Author Paper submitted to
+\href{https://uist.acm.org/2026/}{ACM UIST 2026}
+(\textit{ACM Symposium on User Interface Software and Technology}).\\
+\begin{figure} [h]
+    \centering
+    \includegraphics[width=1\linewidth]{covision.png}
+    \caption{CoVision}
+    \label{fig:covision}
+\end{figure}
+The cognitive overload associated with mentally aligning 2D and 3D representations is a fundamental challenge across a range of spatial applications. Especially in collaborative spatial design, the cognitive demands are high because collaborators must simultaneously interpret space, coordinate actions, and reconcile differing viewpoints. To date, prior systems have made progress in linking 2D and 3D interfaces, yet existing solutions tend to either isolate spatial headset users or reduce tablet users to passive viewers. We present CoVision, a cross-platform framework that bridges this gap by treating devices as a design resource: the tablet anchors collaboration as a familiar, grounded input surface, whereas the spatial interface provides immersive consequence where those intentions are experienced in full 3D, connected through Sync, Handoff, and Bridge. To minimize cognitive load, CoVision implements established human interface design principles and grounds its role division in a complexity distribution framework, ensuring neither designer's working memory is saturated simultaneously. We construct a quantitative mapping from user interaction to working memory, using it as an indicator of cognitive load. We instantiate CoVision in the domain of hospital interior design: a context-rich domain with a natural 2D/3D duality, where floor plans and spatial environment are two representations of the same design intent, and where collaborative decision-making carries real consequence. We evaluate our approach with a test collaborative design session with 14 expert users across the planning of three different real-world new hospital wards.
+
+% ---
+\subsection{SpatialWard: A Mixed-Initiative System for Stakeholder-in-the-Loop Spatial Design (Figure~\ref{fig:sptialward})}
+\label{subsec:spatialward}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\linewidth]{spatialward.png}
+    \caption{SpatialWard}
+    \label{fig:sptialward}
+\end{figure}
+\noindent\textbf{Status:} First-Author Paper submitted to
+\href{https://ismar.net/}{IEEE ISMAR 2026}
+(\textit{IEEE International Symposium on Mixed and Augmented Reality}).\\
+Domain-specific spatial design is inherently stakeholder-rich, requiring iterative negotiation among domain experts and designers under a dense set of operational, regulatory, and safety constraints. Existing spatial design tools offer limited support for integrating expert stakeholder input directly into the authoring loop, and few systems couple real-time physical simulation with constraint-aware feedback during the design process itself. We present SpatialWard, a spatial computing system for prospective digital twin design that combines a mixed-initiative 3D interface with an optimization-aware co-design agent. The system encodes hard and soft constraints through a Universal Scene Representation, evaluates layouts in real time using domain-specific simulation, and surfaces violations and repair suggestions as situated visual feedback without interrupting the designer's direct-manipulation workflow. We instantiate and validate this approach in hospital ward design, a representative domain in which spatial decisions carry significant clinical consequences. Results demonstrate that SpatialWard meaningfully reduces constraint violations and better reflects stakeholder preferences, while the underlying interaction and optimization principles generalize to other domain-specific design scenarios that must balance expert intent with hard spatial requirements.
+
+% ---
+\subsection{Development and User Evaluation of Multimodal Spatial Computing Applications for 3D Generative Workflows in Early-Stage Architectural Design Processes}
+\label{subsec:caadria}
+
+\noindent\textbf{Status:} Co-Authored paper Accepted at
+\href{https://caadria.org/}{CAADRIA 2026}
+(\textit{The Association for Computer-Aided Architectural Design Research in Asia}).\\
+
+This paper positions spatial computing not as a visualization endpoint, but as an active site of design reasoning within generative architectural workflows. Using custom applications for Apple Vision Pro and iPad, we introduce a multimodal system that enables designers to move fluidly between 2D sketching, AI-driven 3D generation, and immersive 1:1 spatial evaluation. Through three studies with architecture students and expert practitioners, we investigate how embodied interaction---walking through, around, and inside AI-generated forms---reshapes design judgement, proportion decisions, and spatial intuition. Our findings show that while tablet-based interaction accelerates idea generation and refinement, spatial immersion enables deeper perceptual understanding of mass, light, and enclosure, influencing design choices beyond what screen-based tools afford. By analysing how designers negotiate authorship, agency, and iteration across platforms, this paper contributes new knowledge to spatial computing in architectural ideation and argues that generative AI gains its full potential only when situated within embodied spatial experience.
+
+% ---
+\subsection{EUREXA: End-User Reconfiguration of Environment with eXplainable Augmentation for Generative Fabrication (Figure~\ref{fig:eurexa})}
+\label{subsec:eurexa}
+
+\noindent\textbf{Status:} Second-Authored Paper published at
+\href{https://chi2026.acm.org/}{ACM CHI 2026}
+(\textit{ACM Conference on Human Factors in Computing Systems}).
+\href{https://doi.org/10.1145/3772318.3791934}{DOI: 10.1145/3772318.3791934}\\
+
+\begin{figure} [h]
+    \centering
+    \includegraphics[width=1\linewidth]{image.png}
+    \caption{EUREXA}
+    \label{fig:eurexa}
+\end{figure}
+
+Augmentation allows rapid reconfiguration of passive physical interfaces to improve accessibility, support independent living through domestic automation, and more. However, its potential is largely unrealized for novice users due to several key barriers.
+First, users rarely identify latent interaction problems within their built environments.
+Second, they often lack the knowledge to clearly express design intent.
+Third, many innovative solutions remain in research prototypes, limiting access.
+
+We introduce EUREXA, an agentic AI system to share the spirit of discovery (``Eureka!'').
+EUREXA supports end-users through a \textit{diagnose--discover--describe} workflow: from input with varying ambiguity and complexity, it surfaces latent interaction challenges, presents reconfiguration opportunities through augmentations, and produces interpretable designs.
+Its novelty is a dual search across public augmentation repositories and research articles, enabling reusable designs even when no design libraries or parametric tools exist.
+EUREXA transforms non-parametric models into parametric ones or directly generates fully explainable designs.
+To evaluate EUREXA across varied user inputs, complexities, and clarity levels, we define ambiguity metrics, conduct a user study, and report critical factors for advancing generative AI to help end-users readily augment physical interfaces through fabrication.
+
+% ---------------------------------------------------------------------------
+\section{Academic Service}
+% ---------------------------------------------------------------------------
+
+\begin{itemize}[leftmargin=1.5em]
+    \item Serving as Student Volunteer Co-Chair at
+          \href{https://dis.acm.org/2026/}{ACM DIS 2026}
+          (\textit{ACM Designing Interactive Systems Conference})
+    \item Selected as Student Volunteer at
+          \href{https://chi2026.acm.org/}{ACM CHI 2026}
+          (\textit{ACM Conference on Human Factors in Computing Systems})
+    \item Reviewer for
+          \href{https://chi2026.acm.org/}{ACM CHI 2026} and
+          \href{https://dis.acm.org/2026/}{ACM DIS 2026}
+\end{itemize}
+
+% ---------------------------------------------------------------------------
+\section{Teaching}
+% ---------------------------------------------------------------------------
+
+\begin{itemize}[leftmargin=1.5em]
+    \item Co-mentored Tiffany Tay (Department of Architecture); outcome: a first-authored paper by Tiffany (See \ref{subsec:caadria}) accepted and to be published at
+          \href{https://caadria.org/}{CAADRIA}
+          (\textit{The Association for Computer-Aided Architectural Design Research in Asia})
+    \item Teaching Assistant for the Spatial Computing course ID4401: in-class discussion and advisory with students; off-class 1:1 debugging sessions with students
+\end{itemize}
+
+% ---------------------------------------------------------------------------
+\section{Courses Taken}
+% ---------------------------------------------------------------------------
+ 
+\begin{footnotesize}
+\noindent
+\begin{minipage}[t]{0.46\textwidth}
+  \textbf{2025/2026 Semester 1}\\[0.4em]
+  \begin{tabular}{@{}p{1.3cm}p{4.2cm}r@{}}
+  \toprule
+  \textbf{Code} & \textbf{Description} & \textbf{Units} \\
+  \midrule
+  CS5284  & Graph Machine Learning                   & 4.00 \\
+  ES5000  & Graduate English I                       & 0.00 \\
+  ID5021  & Design Research                          & 4.00 \\
+  ID6770  & Doctoral Seminar in Industrial Design    & 4.00 \\
+  NG5002  & Research Ethics for Graduate Researchers & 2.00 \\
+  \bottomrule
+  \end{tabular}
+\end{minipage}
+\hspace{0.06\textwidth}
+\begin{minipage}[t]{0.46\textwidth}
+  \textbf{2025/2026 Semester 2}\\[0.4em]
+  \begin{tabular}{@{}p{1.3cm}p{4.2cm}r@{}}
+  \toprule
+  \textbf{Code} & \textbf{Description} & \textbf{Units} \\
+  \midrule
+  ES5001A & Graduate English II                      & 0.00 \\
+  ID5951A & Topics in ID: Product Development        & 4.00 \\
+  ID5951B & Topics in ID: Interaction Design         & 4.00 \\
+  ID6770  & Doctoral Seminar in Industrial Design    & 4.00 \\
+  \bottomrule
+  \end{tabular}
+\end{minipage}
+\end{footnotesize}
+
+% ---------------------------------------------------------------------------
+\section{Other Activities}
+% ---------------------------------------------------------------------------
+
+\begin{itemize}[leftmargin=1.5em]
+    \item Seminar participation
+    \item Book club participation
+    \item Roundtable: 2 $\times$ Presentation
+\end{itemize}
+
+\end{document}
